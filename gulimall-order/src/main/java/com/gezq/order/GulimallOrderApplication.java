@@ -1,13 +1,14 @@
-package com.gezq.gulimall.ware;
+package com.gezq.order;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GulimallWareApplication {
+public class GulimallOrderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GulimallWareApplication.class, args);
+
+        SpringApplication.run(GulimallOrderApplication.class, args);
     }
 
 }

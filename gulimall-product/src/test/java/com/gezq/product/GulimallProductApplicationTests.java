@@ -8,6 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.stereotype.Service;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.List;
 
 @SpringBootTest
@@ -15,6 +18,8 @@ class GulimallProductApplicationTests {
 
     @Autowired
     BrandService brandService;
+
+
 
     @Test
     void contextLoads() {

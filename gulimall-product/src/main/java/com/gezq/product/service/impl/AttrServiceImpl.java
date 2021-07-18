@@ -237,9 +237,9 @@ public class AttrServiceImpl extends ServiceImpl<AttrDao, AttrEntity> implements
 
         //2.3)、从当前分类的所有属性中移除这些属性；[因这些分组已经存在被选了 就不用再显示了]
         QueryWrapper<AttrEntity> wrapper = new QueryWrapper<AttrEntity>().eq("catelog_id", catelogId).eq("attr_type", ProductConstant.AttrEnum.ATTR_TYPE_BASE.getCode());
-        if(attrIds != null && attrIds.size() > 0){
-            wrapper.notIn("attr_id", attrIds);
-        }
+//        if(attrIds != null && attrIds.size() > 0){
+//            wrapper.notIn("attr_id", attrIds);
+//        }
         // 当搜索框中有key并且不为空的时候 进行模糊查询
         String key = (String) params.get("key");
         if(!StringUtils.isEmpty(key)){
